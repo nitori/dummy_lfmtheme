@@ -1,0 +1,25 @@
+{
+  "urlArgs": "lfmv=1",
+  "paths": {
+    "LFM": "EXT:lfmtheme/Resources/Public/JavaScript",
+
+    "jquery": "EXT:lfmtheme/Resources/Public/JavaScript/Libraries/jquery",
+    "underscore": "EXT:lfmtheme/Resources/Public/JavaScript/Libraries/underscore",
+    "popper": "EXT:lfmtheme/Resources/Public/JavaScript/Libraries/popper",
+    "magnific-popup": "EXT:lfmtheme/Resources/Public/JavaScript/Libraries/jquery.magnific-popup",
+    "magnific-popup-de": "EXT:lfmtheme/Resources/Public/JavaScript/Language/magnific-popup-de",
+    "parsley": "EXT:lfmtheme/Resources/Public/JavaScript/Libraries/parsley",
+    "emailDecrypt": "EXT:lfmtheme/Resources/Public/JavaScript/Libraries/emailDecrypt",
+
+    "parsley-de": "EXT:lfmtheme/Resources/Public/JavaScript/Language/parsley-de",
+
+    "util": "EXT:lfmtheme/Resources/Public/JavaScript/Libraries/util",
+    "collapse": "EXT:lfmtheme/Resources/Public/JavaScript/Libraries/collapse",
+    "dropdown": "EXT:lfmtheme/Resources/Public/JavaScript/Libraries/dropdown"
+  },
+  "shim": {
+    "util": {"deps": ["jquery"]},
+    "collapse": {"deps": ["jquery"]},
+    "dropdown": {"deps": ["jquery"]}
+  }
+}

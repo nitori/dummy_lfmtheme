@@ -1,0 +1,40 @@
+page = PAGE
+page {
+
+    # ... omitted stuff ...
+
+    footerData {
+        10 = USER
+        10 {
+            userFunc = LFM\Lfmtheme\UserFunc\RequireJs->generateRequireJsConfig
+            config = EXT:lfmtheme/Configuration/RequireJS/requirejs.json
+            load {
+                theme = LFM/Distribution/Theme.min
+            }
+        }
+    }
+
+    includeJS >
+    includeJSLibs >
+    includeJSFooter >
+    includeJSFooterlibs >
+
+    # ... omitted stuff ...
+
+}
+
+
+[applicationContext = Development*]
+    page.footerData.10 {
+        bust = 1
+        load.theme = LFM/Theme
+    }
+[global]
+
+[globalVar = GP:L < 1]
+    # Using nesting ensures the following are required only after Theme.min is loaded
+    page.footerData.10.load.theme {
+        parsley-de = parsley-de
+        magnific-popup-de = magnific-popup-de
+    }
+[global]
